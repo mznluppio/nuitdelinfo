@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'sida';
+    src: url('/font/sida.otf') format("opentype");
+}
+
+footer{
+    position: relative;
+    top:-10%;
+  }
+  
+   
+  
+
+#soutenir {
+    position:relative;
+    text-align: center;
+}
+
+.don {
+    color: #9A48D0;
+}
+
+.don input {
+    margin-top: 1.5%;
+    margin-bottom: 7%;
+    border: #9A48D0 2px solid;
+    border-radius: 10px;
+    color: #9A48D0;
+    /*-webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);*/
+}
+
+.don input[type="button"] {
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.don input[type="button"]:hover {
+    background-color: #9A48D0;
+    border: white 2px solid;
+    color: white;
+}
+
+.don ::placeholder {
+    color: #9A48D0;
+}
+
+.don ::content {
+    color: #9A48D0;
+}
+
+#sidaction {
+    font-family: 'sida';
+    color: black;
+    text-align: center;
+    font-size: large;
+}

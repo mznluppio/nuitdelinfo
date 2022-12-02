@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-soutenir.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Font Awesome 5 PRO/css/all.css">
+    <title>3iSida</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-transparent" id="headerNav">
+        <div class="container-fluid" style="left:50%;">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="" height="20" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <i class="fa-solid fa-house" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-circle-info" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn" href="informer.html">S'informer</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-heart" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn active" href="soutenir.html">Soutenir</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-paper-plane" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Divs -->
+   
+   
+
+    
+
+    <div id="soutenir" class="mainDiv hidden">
+        <div id="contact" class="mainDiv">
+            <div data-aos="fade-up" data-aos-duration="1000" style="margin-top: 15%;">
+                <h1>Don</h1>
+                <img onclick="scrollFunction1()" id="lien"
+                style="color:rgb(255, 255, 255);width:50px; height:50px; position: absolute; left: 50%; top: 700%; transform: translate(-50%, -50%);"
+                src="/assets/svg.svg">
+            </div>
+        <img style="width: 25%; height: 25%;margin-top:25%" src="assets/visuel.png">
+        <div class="don" id="testa">
+            <a href="https://don.sidaction.org/">
+                <input type="button" value="Faire un don">
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <script> function scrollFunction1() {
+        let e = document.getElementById("testa");
+        e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'start'
+        });
+    } </script>
+</body>
+
+<footer style="margin-top: 10%;">
+    &copy; Nuit de l'informatique 2022 | Équipe Placebo
+</footer>
+
+<script src="js/index.js"></script>
+
+
+
+</html>

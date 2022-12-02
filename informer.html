@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-informer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Font Awesome 5 PRO/css/all.css">
+    <title>3iSida</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-transparent" id="headerNav">
+        <div class="container-fluid" style="left:50%;">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="" height="20" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <i class="fa-solid fa-house" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn " href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-circle-info" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn active" href="informer.html">S'informer</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-heart" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn" href="soutenir.html">Soutenir</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-paper-plane" id="icon"></i>
+                        <a class="nav-link mx-2 navbtn" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Divs -->
+
+
+    <div id="informer" class="mainDiv">
+        <div data-aos="fade-up" data-aos-duration="1000" style="margin-top: 15%;">
+            <h1>Informations</h1>
+            <img onclick="scrollFunction1()" id="lien"
+                style="color:rgb(255, 255, 255);width:50px; height:50px; position: absolute; left: 50%; top: 700%; transform: translate(-50%, -50%);"
+                src="/assets/svg.svg">
+        </div>
+    </div>
+
+    <div id="testa" style="margin-top:40%;"  data-aos="fade-up" data-aos-duration="1000">
+        <h3>Peut-on guérir du VIH?</h3>
+        <p> Il existe des traitements contre le VIH, mais ils ne permettent pas de guérir du VIH. En revanche, ils
+            permettent de mener une vie normale, d’avoir des enfants et de bénéficier d’une espérance de vie
+            quasiment identique à celle d’une personne séronégative. Les traitements empêchent la transmission du
+            VIH, y compris lors de rapports sexuels sans préservatifs, lors de la grossesse et de l’allaitement.
+        </p>
+    </div>
+
+    <div style="margin-top:10%;margin-left: 20%;" data-aos="fade-up" data-aos-duration="1000">
+        <h3>Quels sont les différents traitements ?</h3>
+        <p> Les médecins disposent aujourd’hui d’un arsenal thérapeutique conséquent pour lutter contre la maladie. Ces
+            traitements ont permis une grande amélioration de la qualité et de l’espérance de vie des patients, au prix
+            d’effets secondaires parfois importants. Malheureusement, le sida reste toujours une maladie incurable.
+
+            Il existe plusieurs types de médicaments anti-VIH, chacun agissant au niveau d’une protéine particulière
+            dont a besoin le virus pour se reproduire. Ainsi, certains bloquent l’entrée du virus dans la cellule hôte,
+            d’autres empêchent la multiplication de son matériel génétique ou encore altèrent sa fabrication pour
+            empêcher sa propagation.
+
+            Aujourd’hui, le traitement fait intervenir au moins 3 classes de médicaments (trithérapie) pour éviter les
+            résistances et augmenter son efficacité. Ces derniers ont maintenant tendance à être regroupés au sein d’un
+            seul et même comprimé afin d’en faciliter la prise et l’observance.
+        </p>
+    </div>
+    <div style="margin-top:10%;" data-aos="fade-up" data-aos-duration="1000">
+        <h3>Quels sont les modes de transmission du sida ?</h3>
+        <p> On distingue trois modes de transmission possibles du sida :
+
+            La voie sexuelle : lors de rapports sexuels non protégés ou de contacts bucco-génitaux avec une personne
+            malade. La meilleure protection existante pour éviter un tel type contamination reste le port du
+            préservatif.
+            La voie sanguine : la pathologie peut se contracter lors de d’une transfusion sanguine avec du sang
+            contaminé (en France, la recherche d’agents transmissibles comme le VIH est systématiquement réalisée chez
+            les donneurs de sang, ce qui rend ce cas de figure quasi impossible). Ce mode de transmission peut également
+            se faire via le partage d’aiguilles et de seringues (consommation de drogues) ou d’instruments coupants
+            infectés.
+            La voie maternelle : lors de l’accouchement ou de l’allaitement au sein, une mère atteinte du VIH peut
+            contaminer son enfant. Le taux de transmission par ce biais a chuté drastiquement depuis l’apparition des
+            traitements antirétroviraux.
+        </p>
+    </div>
+
+
+
+
+
+    <script> function scrollFunction1() {
+            let e = document.getElementById("testa");
+            e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'start'
+            });
+        } </script>
+
+</body>
+
+<footer style="margin-top: 10%;">
+    &copy; Nuit de l'informatique 2022 | Équipe Placebo
+</footer>
+
+<script src="js/index.js"></script>
+
+
+
+</html>
